@@ -117,6 +117,8 @@ img.left {
     grid-row: 1;
 }
 
+/* Sign Up */
+
 .sign-up-wrapper {
     display: flex;
     justify-content: center;
@@ -130,115 +132,42 @@ img.left {
     flex-direction: column;
     align-items: center;
     background: #fafafa;
-    padding: 2rem;
     border-radius: 10px;
     width: 50%;
     -webkit-box-shadow: 0px 5px 9px 0px rgba(74,72,168,0.83); 
     box-shadow: 0px 5px 9px 0px rgba(74,72,168,0.83);
 }
 
-#sign-up>* {
-    display: flex;
-    flex-wrap: wrap;
+.sign-up-input {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     margin: 0;
-    padding: 0.7rem;
-    justify-content: center;
-    align-items: center;
+    padding: 1rem;
     width: 70%;
     color: #01010d;
 }
 
-#sign-up>h1 {
+#sign-up + h1 {
+    text-align: center;
     font-size: 3rem;
-    margin: 0 0 4rem 0;
-    padding: 0;
     font-family: 'Allerta Stencil', sans-serif;
-}
-
-.sign-up-input>* {
-    flex: 3;
-    font-size: 1.3rem;
-}
-
-#terms-service {
-    flex: 1;
-    margin: 0;
-    transform: scale(1.5);
+    padding: 1rem 0 2rem 0;
 }
 
 .sign-up-input>.error {
+    grid-column: 1 / -1;
     color: red;
-    font-weight: 700;
+    display: none;
 }
 
-/* Footer */
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: #01010d;
-    color: #fafafa;
-}
-
-footer>div>h3 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.about-us {
-    text-align: center;
-    padding: 0 4rem 0 1rem;
-}
-
-.company-info>.social-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    list-style: none;
-    text-align: center;
-}
-
-.social-media>* {
-    text-decoration: none;
-    color: #fafafa;
-}
-
-.creator-info {
+.sign-up-input>input[type=submit] {
     grid-column: 1 / -1;
 }
 
-.creator-info>h3 {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 10px;
-    align-items: center;
-    padding: 1rem;
-    margin: 0;
-}
-
-.creator-info>h3:before, .creator-info>h3:after {
-    display: block;
-    content: '';
-    height: 10px;
-    background: #fafafa;
-}
-
-.creator-info>.social-list {
-    display: flex;
-    list-style: none;
-    font-size: 1.7rem;
-    justify-content: space-around;
-}
-
-
-.credits {
-    grid-column: 1 / -1;
-    text-decoration: none;
-    color: #fafafa;
+#terms-service {
+    justify-self: center;
+    transform: scale(2);
     text-align: center;
-    padding-top: 1rem;
-    font-size: 0.8rem;
 }
 
 /* mediaqueries */
